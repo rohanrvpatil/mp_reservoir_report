@@ -1,0 +1,4486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Begin Screen component://fcmreport/widget/fcmreportScreens.xml#reservoirWaterLevel -->
+<!-- Begin Screen component://fcmreport/widget/CommonScreens.xml#fcmreportCommonDecorator -->
+<!-- Begin Screen component://fcmreport/widget/CommonScreens.xml#main-decorator -->
+<!-- Begin Screen component://fcmreport/widget/CommonScreens.xml#GlobalDecoratorPublic -->
+<!-- Begin Template component://common/webcommon/WEB-INF/header.ftl -->
+<link rel="stylesheet" href="/bluelight/style.css" type="text/css"/>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-IN" lang="en-IN" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="imagetoolbar" content="false" />
+
+    <title>eGov&#58; SMS Based Reservoir Water Level Monitoring System: Flood Report</title>
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="copyright" content="" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="author" content="" />
+
+    <link rel="start" href="" title="" />
+    <link rel="shortcut icon" href="/images/ofbiz.ico" />
+    
+                <script src="/images/prototypejs/prototype.js" type="text/javascript"></script>
+                <script src="/images/prototypejs/scriptaculous.js" type="text/javascript"></script>
+                <script src="/images/calendarDateSelect/calendar_date_select.js" type="text/javascript"></script>
+                <script src="/images/hrmsjs/hrmsvalidation.js" type="text/javascript"></script>
+                <script src="/images/selectall.js" type="text/javascript"></script>
+                <script src="/images/fieldlookup.js" type="text/javascript"></script>
+                <script src="/images/GooglemapMarkers.js" type="text/javascript"></script>
+            <script src="/bluelight/dropdown.js" type="text/javascript"></script>
+</head>
+	
+
+<body>
+	 <div id="masthead">
+	  <div id="kuchbhi">
+    	<a href="/fcmreport/control/main;jsessionid=103B0678E83A78C8BCA80A6340B4394F.jvm1"></a>
+    </div>
+      <ul>
+        </li>
+      </ul>
+      <br class="clear" />
+    </div>
+    
+</body>
+</html>
+<!-- End Template component://common/webcommon/WEB-INF/header.ftl -->
+<!-- Begin Section Widget  -->
+<!-- Begin Template component://bluelight/includes/appbarOpen.ftl -->
+
+<div class="tabbar">
+  <div class="breadcrumbs">
+    <div class="breadcrumbs-start">
+    	
+    	<div id="main-navigation">
+        
+      </div>
+      
+<!-- End Template component://bluelight/includes/appbarOpen.ftl -->
+<!-- End Section Widget  -->
+<!-- Begin Section Widget  -->
+<!-- Begin Menu Widget component://common/widget/CommonMenus.xml#CommonPubAppBarMenu -->
+<div id="app-navigation">
+<h2>SMS Based Reservoir Water Level Monitoring System&nbsp;</h2>
+<ul>
+<li>
+ <ul>
+ </ul>
+</li>
+</ul>
+ <br class="clear"/>
+</div>
+<!-- End Menu Widget component://common/widget/CommonMenus.xml#CommonPubAppBarMenu -->
+<!-- End Section Widget  -->
+<!-- Begin Section Widget  -->
+<!-- Begin Template component://bluelight/includes/appbarClose.ftl -->
+
+
+    </div>
+  </div>
+  <div class="breadcrumbs-sep">
+        Flood Report
+  </div>
+  	
+  <div class="breadcrumbs-end">
+  	<ul>
+				<li style="white-space:nowrap;"><a onclick="return false;" title="Coming Soon" target="_blank" href="http://koha.mpwrd.gov.in/" title="Library Management System">e-Library |</a>
+	            <a onclick="return false;" title="Coming Soon" target="_blank" href="http://www.mpwrd.gov.in/training/dmz/" title="Online Learning & Training System">e-Learning |</a>
+	            <a onclick="return false;" title="Coming Soon" target="_blank" href="http://mail.mpwrd.gov.in/" title="E-Mail Facility for WRDMP Employees">e-Mail</a></li>
+    </ul>	
+  </div>
+</div>
+<div class="clear">
+</div>
+<!-- End Template component://bluelight/includes/appbarClose.ftl -->
+<!-- End Section Widget  -->
+<!-- Begin Template component://bluelight/includes/messages.ftl -->
+
+<!-- End Template component://bluelight/includes/messages.ftl -->
+<div class="contentarea">
+<!-- Begin Section Widget  -->
+<!-- Begin Menu Widget component://fcmreport/widget/fcmreportMenus.xml#reportDetails -->
+<div class="button-bar tab-bar">
+<ul>
+<li>
+ <ul>
+  <li title="SMS Based Reservoir Report"><a href="/fcmreport/control/main">Home</a></li>
+  <li><form method="post" action="/fcmreport/control/reservoirLevelSearch" name="reportDetails_reservoirDetails_LF_2"></form><a href="javascript:document.reportDetails_reservoirDetails_LF_2.submit()">Reservoir Water Level Details</a></li>
+  <li><a href="/fcmreport/control/gateOpenDetails">Gate Opening Details</a></li>
+  <li><a href="/fcmreport/control/fgmGTReport">Position of Reservoir Gates</a></li>
+  <li><a href="/fcmreport/control/riverGaugeWLReport">River Gauge Water Level Report</a></li>
+  <li><a href="/fcmreport/control/floodreport">Flood Report</a></li>
+  <li class="selected "><a href="/fcmreport/control/reservoirWaterLevel">Reservoir Water Level Report</a></li>
+ </ul>
+</li>
+</ul>
+ <br class="clear"/>
+</div>
+<!-- End Menu Widget component://fcmreport/widget/fcmreportMenus.xml#reportDetails -->
+<div class="clear">
+</div><!-- Begin Template component://fcmreport/webapp/fcmreport/fcmreport/RptReservoirReport.ftl -->
+
+<form method="post" name="prevyrdata" action="" class="basic-form">
+
+
+
+<div class="screenlet" >
+  <div class="screenlet-title-bar" >
+  		
+  		  			<div><center><b><h2>Reservoir Water Level Report</h2></b></center></div>
+  		
+  </div>
+<div class="screenlet-body serach-results">
+  <table class="basic-table hover-bar" cellspacing="0">
+  	<tr>
+  		<td colspan="17" class="mandatoryNote">Water Level in <font color="red">RED</font> color indicates above than FRL.</td>
+  	</tr>
+  	<tr class="header-row-2">
+  		<td rowspan="3"><b><center>S.No.</center></b></td>
+  		<td rowspan="3"><b><center>Name of the Reservoir</center></b></td>
+  		<td rowspan="3"><b><center>District</center></b></td>
+  		<td rowspan="3"><b><center>Authorised Person</center></b></td>
+  		<td rowspan="3"><b><center>contact No.</center></b></td>
+  		<td rowspan="3" width ="5%"><b><center>LSL in Meter</center></b></td>
+  		<td rowspan="3" width ="5%"><b><center>FRL in Meter</center></b></td>
+  		<td colspan="8"><b><center>Water Level in meter</center></b></td>
+  		<td colspan="2"><b><center>Rainfall in mm</center></b></td>
+  	</tr>
+  	<tr class="header-row-2">
+  	  	<td colspan="4"><b><center>Yesterday (29/09/2024) </center></b></td>
+  		<td colspan="4"><b><center>Today (30/09/2024) </center></b></td>
+  		
+  		<td rowspan="2"><b><center>Daily</center></b></td>
+  		<td rowspan="2"><b><center>Total</center></b></td>
+  	</tr>
+  	<tr class="header-row-2">
+  		<td><b><center>08:00 AM</center></b></td>
+  		<td><b><center>12:00 PM</center></b></td>
+  		<td><b><center>04:00 PM</center></b></td>
+  		<td><b><center>08:00 PM</center></b></td>
+  		
+  		<td><b><center>08:00 AM</center></b></td>
+  		<td><b><center>12:00 PM</center></b></td>
+  		<td><b><center>04:00 PM</center></b></td>
+  		<td><b><center>08:00 PM</center></b></td> 		
+  		
+  	</tr>
+  	
+  	
+  	<tr>
+  			<td><center><b>1</b></center></td>
+  			<td><center><b>2</b></center></td>
+  			<td><center><b>3</b></center></td>
+  			<td><center><b>4</b></center></td>
+  			<td><center><b>5</b></center></td>
+  			<td><center><b>6</b></center></td>
+  			<td><center><b>7</b></center></td>
+  			<td><center><b>8</b></center></td>
+  			<td><center><b>9</b></center></td>
+  			<td><center><b>10</b></center></td>
+  			<td><center><b>11</b></center></td>
+  			<td><center><b>12</b></center></td>
+  			<td><center><b>13</b></center></td>
+  			<td><center><b>14</b></center></td>
+  			<td><center><b>15</b></center></td>
+  			<td><center><b>16</b></center></td>
+  			<td><center><b>17</b></center></td>
+  	</tr>
+  
+		  	<tr  >
+		  		<td>1</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('19612','Aoda Tank');" title="Click here to see History of Water Level for Aoda Tank">Aoda Tank</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Sheopur</td>
+  			<td width="9%"><b/><i/>R.N. Sharma</td>
+  			<td align="center"><b/><i/>9826275463</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">335.28</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">348.23</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>2</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17220','Bansagar Dam');" title="Click here to see History of Water Level for Bansagar Dam">Bansagar Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Shahdol</td>
+  			<td width="9%"><b/><i/>R.P.S. Kunwar</td>
+  			<td align="center"><b/><i/>9424634890</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">323.10</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">341.64</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>341.64</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>3</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('42277','Bansujara Major Project');" title="Click here to see History of Water Level for Bansujara Major Project">Bansujara Major Project</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Tikamgarh</td>
+  			<td width="9%"><b/><i/>Deependra Singh Kushwah</td>
+  			<td align="center"><b/><i/>9294629462</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">302.50</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">316.50</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>4</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17537','Barna Dam');" title="Click here to see History of Water Level for Barna Dam">Barna Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Raisen</td>
+  			<td width="9%"><b/><i/>Ajay Verma</td>
+  			<td align="center"><b/><i/>9425027487</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">338.10</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">348.55</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>348.55</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				<font color="red"><b>348.55</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>5</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('20661','Bawanthadi &#40;Rajiv Sagar&#41;');" title="Click here to see History of Water Level for Bawanthadi &#40;Rajiv Sagar&#41;">Bawanthadi &#40;Rajiv Sagar&#41;</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Balaghat</td>
+  			<td width="9%"><b/><i/>Damodar Wadiwe</td>
+  			<td align="center"><b/><i/>7610252881</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">333.50</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">344.40</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				344.30
+		  		</td>
+		  		
+		  		<td align="right">
+		  				344.30
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>6</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('40904','Bilgaon Medium Project');" title="Click here to see History of Water Level for Bilgaon Medium Project">Bilgaon Medium Project</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Dindori</td>
+  			<td width="9%"><b/><i/>Amardeep Tripathi</td>
+  			<td align="center"><b/><i/>9893486302</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">690.50</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">701.00</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>7</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('16884','Dahod Tank');" title="Click here to see History of Water Level for Dahod Tank">Dahod Tank</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Raisen</td>
+  			<td width="9%"><b/><i/>Pratibha Singh</td>
+  			<td align="center"><b/><i/>9993795775</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">453.54</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">459.94</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>8</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17541','Dejla Dewda Tank');" title="Click here to see History of Water Level for Dejla Dewda Tank">Dejla Dewda Tank</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Khargone</td>
+  			<td width="9%"><b/><i/>P.K. Brahmne</td>
+  			<td align="center"><b/><i/>9826379910</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">369.56</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">383.20</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>9</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17456','Dholawad Tank');" title="Click here to see History of Water Level for Dholawad Tank">Dholawad Tank</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Ratlam</td>
+  			<td width="9%"><b/><i/>Nripendra Dev</td>
+  			<td align="center"><b/><i/>9406607957</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">380.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">395.00</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				<font color="red"><b>395</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>395</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>10</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('19620','Gandhisagar Dam');" title="Click here to see History of Water Level for Gandhisagar Dam">Gandhisagar Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Mandsaure</td>
+  			<td width="9%"><b/><i/>K.L. Kachhawa</td>
+  			<td align="center"><b/><i/>9425415347</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">381.00</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">399.90</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				399.71
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				399.71
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>11</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17506','Gopikrishn Sagar');" title="Click here to see History of Water Level for Gopikrishn Sagar">Gopikrishn Sagar</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Guna</td>
+  			<td width="9%"><b/><i/>Kuldeep Solanki</td>
+  			<td align="center"><b/><i/>9669671836</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">421.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">434.00</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				433.95
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				433.99
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>12</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17544','Harsi Dam');" title="Click here to see History of Water Level for Harsi Dam">Harsi Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Gwalior</td>
+  			<td width="9%"><b/><i/>Agniwesh Singh</td>
+  			<td align="center"><b/><i/>9399865628</td>
+		
+	  		 
+  						
+  						
+  										
+ 			
+		  		<td align="right">252.07</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">264.93</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>13</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('40773','Indira Sagar Project');" title="Click here to see History of Water Level for Indira Sagar Project">Indira Sagar Project</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Khandwa</td>
+  			<td width="9%"><b/><i/>Control Room</td>
+  			<td align="center"><b/><i/>9630701352</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">245.13</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">262.13</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>262.13</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>14</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('39931','Kaka Sahab gadagil sagar Project');" title="Click here to see History of Water Level for Kaka Sahab gadagil sagar Project">Kaka Sahab gadagil sagar Project</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Mandsaure</td>
+  			<td width="9%"><b/><i/>Vijendra Singh Dodwe</td>
+  			<td align="center"><b/><i/>8349388616</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">456.30</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">460.80</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				460.79
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>15</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17535','Kaketo Dam');" title="Click here to see History of Water Level for Kaketo Dam">Kaketo Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Gwalior</td>
+  			<td width="9%"><b/><i/>Agniwesh Singh</td>
+  			<td align="center"><b/><i/>9399865628</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">320.19</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">342.75</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				342.74
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>16</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17455','Kaliasote Dam');" title="Click here to see History of Water Level for Kaliasote Dam">Kaliasote Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Bhopal</td>
+  			<td width="9%"><b/><i/>Nitin kuhikar</td>
+  			<td align="center"><b/><i/>6260214739</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">486.16</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">505.67</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>505.67</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>17</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17454','Kerwan Dam');" title="Click here to see History of Water Level for Kerwan Dam">Kerwan Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Bhopal</td>
+  			<td width="9%"><b/><i/>Nitin kuhikar</td>
+  			<td align="center"><b/><i/>6260214739</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">500.79</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">509.93</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>1673</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>18</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('16973','Kolar Dam');" title="Click here to see History of Water Level for Kolar Dam">Kolar Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Sehore</td>
+  			<td width="9%"><b/><i/>Harsha Jainwal</td>
+  			<td align="center"><b/><i/>9893174470</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">432.93</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">462.20</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				<font color="red"><b>462.2</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>462.2</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>19</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('19651','Kotwal Tank');" title="Click here to see History of Water Level for Kotwal Tank">Kotwal Tank</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Morena</td>
+  			<td width="9%"><b/><i/>Anjhul Dohre</td>
+  			<td align="center"><b/><i/>7566648111</td>
+		
+	  		 
+  						
+  						
+  										
+ 			
+		  		<td align="right">164.66</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">168.40</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				168.39
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>20</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('42275','Kundalia Major Project');" title="Click here to see History of Water Level for Kundalia Major Project">Kundalia Major Project</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Rajgarh</td>
+  			<td width="9%"><b/><i/>Garima Agrawal</td>
+  			<td align="center"><b/><i/>9827711761</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">380.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">400.00</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				399.55
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				399.60
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				399.60
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				399.55
+		  		</td>
+		  		
+		  		<td align="right">
+		  				399.50
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>21</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17517','Kunwar Chain Sagar');" title="Click here to see History of Water Level for Kunwar Chain Sagar">Kunwar Chain Sagar</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Rajgarh</td>
+  			<td width="9%"><b/><i/>Bhupendra Singh</td>
+  			<td align="center"><b/><i/>9424587357</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">446.28</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">450.78</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>22</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('20781','Kushalpura Dam');" title="Click here to see History of Water Level for Kushalpura Dam">Kushalpura Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Rajgarh</td>
+  			<td width="9%"><b/><i/>Garima Agrawal</td>
+  			<td align="center"><b/><i/>9827711761</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">415.60</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">418.90</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				<font color="red"><b>418.9</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>418.9</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>23</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('19314','Kutni Dam');" title="Click here to see History of Water Level for Kutni Dam">Kutni Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Chhatarpur</td>
+  			<td width="9%"><b/><i/>Ashish Malviya</td>
+  			<td align="center"><b/><i/>9893052965</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">191.45</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">203.50</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				198.10
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>24</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17827','Madikheda Dam');" title="Click here to see History of Water Level for Madikheda Dam">Madikheda Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Shivpuri</td>
+  			<td width="9%"><b/><i/>Manoher borate</td>
+  			<td align="center"><b/><i/>9893715698</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">320.05</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">346.25</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				346.20
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				346.20
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				346.20
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				346.20
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>346.25</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				<font color="red"><b>346.25</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>25</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('20595','Mahan Dam');" title="Click here to see History of Water Level for Mahan Dam">Mahan Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Sidhi</td>
+  			<td width="9%"><b/><i/>P.K. Tripathi</td>
+  			<td align="center"><b/><i/>8770704964</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">307.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">325.00</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				324.80
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>26</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('20570','Mahi Main Dam');" title="Click here to see History of Water Level for Mahi Main Dam">Mahi Main Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Jhabua</td>
+  			<td width="9%"><b/><i/>Vipin Patidar</td>
+  			<td align="center"><b/><i/>9827500617</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">441.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">451.50</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				451.10
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				451.15
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>27</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('20571','Mahi Subsidiary Dam');" title="Click here to see History of Water Level for Mahi Subsidiary Dam">Mahi Subsidiary Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Dhar</td>
+  			<td width="9%"><b/><i/>Vipin Patidar</td>
+  			<td align="center"><b/><i/>9827500617</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">467.17</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">474.30</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				474.10
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				474.10
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>28</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('31954','Mahuar Dam');" title="Click here to see History of Water Level for Mahuar Dam">Mahuar Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Shivpuri</td>
+  			<td width="9%"><b/><i/>V.K. Sharma</td>
+  			<td align="center"><b/><i/>6260457737</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">317.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">331.00</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				330.90
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				330.70
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>29</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('16875','Matiyari  Dam');" title="Click here to see History of Water Level for Matiyari  Dam">Matiyari  Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Mandla</td>
+  			<td width="9%"><b/><i/>C.S. Dhurve</td>
+  			<td align="center"><b/><i/>9424340354</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">484.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">497.43</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				497.24
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>30</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('42325','Mohanpura Multipurpose Project');" title="Click here to see History of Water Level for Mohanpura Multipurpose Project">Mohanpura Multipurpose Project</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Rajgarh</td>
+  			<td width="9%"><b/><i/>Ashok Dixit</td>
+  			<td align="center"><b/><i/>7771813350</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">377.05</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">398.00</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				397.50
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				397.60
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				397.40
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>31</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('40930','Mohini Pick up Weir');" title="Click here to see History of Water Level for Mohini Pick up Weir">Mohini Pick up Weir</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Shivpuri</td>
+  			<td width="9%"><b/><i/>Jitendra Yadav</td>
+  			<td align="center"><b/><i/>7898397139</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">263.95</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">276.25</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				275.90
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				275.80
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>32</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('40775','Omkareshwar Project');" title="Click here to see History of Water Level for Omkareshwar Project">Omkareshwar Project</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Khandwa</td>
+  			<td width="9%"><b/><i/>Control Room</td>
+  			<td align="center"><b/><i/>7280271735</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">193.54</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">196.60</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				194.35
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				194.35
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				194.35
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				194.41
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				194.65
+		  		</td>
+		  		
+		  		<td align="right">
+		  				194.65
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>33</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17238','Pagara Tank');" title="Click here to see History of Water Level for Pagara Tank">Pagara Tank</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Morena</td>
+  			<td width="9%"><b/><i/>Rahul Yadav</td>
+  			<td align="center"><b/><i/>8839731485</td>
+		
+	  		 
+  						
+  						
+  										
+ 			
+		  		<td align="right">182.88</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">199.34</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				199.33
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>34</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('40870','Pagra Tank &#40;Feeder&#41;');" title="Click here to see History of Water Level for Pagra Tank &#40;Feeder&#41;">Pagra Tank &#40;Feeder&#41;</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Sagar</td>
+  			<td width="9%"><b/><i/>Pushpendra Singh</td>
+  			<td align="center"><b/><i/>9826639019</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">433.04</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">445.02</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				<font color="red"><b>445.02</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				444.85
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>35</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('42400','Parasdoh Tank');" title="Click here to see History of Water Level for Parasdoh Tank">Parasdoh Tank</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Betul</td>
+  			<td width="9%"><b/><i/>Vipin Vamankar</td>
+  			<td align="center"><b/><i/>9589254443</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">623.85</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">639.10</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				<font color="red"><b>639.1</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>639.1</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>36</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('42689','Pawai Medium Irrigation Project');" title="Click here to see History of Water Level for Pawai Medium Irrigation Project">Pawai Medium Irrigation Project</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Panna</td>
+  			<td width="9%"><b/><i/>Sudhir Sharma</td>
+  			<td align="center"><b/><i/>9425535452</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">330.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">340.50</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				338.20
+		  		</td>
+		  		
+		  		<td align="right">
+		  				338.20
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>37</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17540','Pehsari Dam');" title="Click here to see History of Water Level for Pehsari Dam">Pehsari Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Gwalior</td>
+  			<td width="9%"><b/><i/>Agniwesh Singh</td>
+  			<td align="center"><b/><i/>9399865628</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">324.61</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">334.37</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				334.06
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>38</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('40801','Pench Diversion');" title="Click here to see History of Water Level for Pench Diversion">Pench Diversion</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Chindwara</td>
+  			<td width="9%"><b/><i/>Sant Kumar Sirsam</td>
+  			<td align="center"><b/><i/>9752703025</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">613.40</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">625.75</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				<font color="red"><b>625.75</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>625.75</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>39</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('40884','Rajghat Dam');" title="Click here to see History of Water Level for Rajghat Dam">Rajghat Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Ashoknagar</td>
+  			<td width="9%"><b/><i/>J. S. Bhadoriya</td>
+  			<td align="center"><b/><i/>8528231695</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">356.62</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">371.00</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				370.95
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>371</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>40</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('20741','Rangawan Dam');" title="Click here to see History of Water Level for Rangawan Dam">Rangawan Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Chhatarpur</td>
+  			<td width="9%"><b/><i/>Ashish Malviya</td>
+  			<td align="center"><b/><i/>9893052965</td>
+		
+	  		 
+  						
+  						
+  										
+ 			
+		  		<td align="right">219.76</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">233.17</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				227.01
+		  		</td>
+		  		
+		  		<td align="right">
+		  				227.01
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>41</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('40774','Rani Awanti Bai Sagar &#40;Bargi&#41;');" title="Click here to see History of Water Level for Rani Awanti Bai Sagar &#40;Bargi&#41;">Rani Awanti Bai Sagar &#40;Bargi&#41;</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Jabalpur</td>
+  			<td width="9%"><b/><i/>Ajay Sure</td>
+  			<td align="center"><b/><i/>9425411335</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">403.50</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">422.76</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				<font color="red"><b>423.45</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>423.3</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>42</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('20535','Retam Barrage');" title="Click here to see History of Water Level for Retam Barrage">Retam Barrage</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Mandsaure</td>
+  			<td width="9%"><b/><i/>Vijendra Singh Dodwe</td>
+  			<td align="center"><b/><i/>8349388616</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">424.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">428.50</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				428.49
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>43</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('31963','Sagad Dam');" title="Click here to see History of Water Level for Sagad Dam">Sagad Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Vidisha</td>
+  			<td width="9%"><b/><i/>Priyanka Bhandhari</td>
+  			<td align="center"><b/><i/>9424472525</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">448.05</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">455.64</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>44</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17453','Samrat Ashok Sagar &#40;Halali&#41;');" title="Click here to see History of Water Level for Samrat Ashok Sagar &#40;Halali&#41;">Samrat Ashok Sagar &#40;Halali&#41;</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Vidisha</td>
+  			<td width="9%"><b/><i/>Ramesh Chouhan</td>
+  			<td align="center"><b/><i/>9754893947</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">448.95</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">459.61</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				<font color="red"><b>459.61</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				459.54
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>45</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('20812','Sanjay Sagar&#40;Bah&#41; Project');" title="Click here to see History of Water Level for Sanjay Sagar&#40;Bah&#41; Project">Sanjay Sagar&#40;Bah&#41; Project</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Vidisha</td>
+  			<td width="9%"><b/><i/>Priyanka Bhandhari</td>
+  			<td align="center"><b/><i/>9424472525</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">440.50</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">448.20</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				<font color="red"><b>448.2</b></font>
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				<font color="red"><b>448.2</b></font>
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>46</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('41720','Singhpur Barrage');" title="Click here to see History of Water Level for Singhpur Barrage">Singhpur Barrage</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Chhatarpur</td>
+  			<td width="9%"><b/><i/>Ashish Malviya</td>
+  			<td align="center"><b/><i/>9893052965</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">201.98</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">209.20</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				206.40
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				206.50
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>47</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17536','Sukta Tank');" title="Click here to see History of Water Level for Sukta Tank">Sukta Tank</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Khandwa</td>
+  			<td width="9%"><b/><i/>Neelam Neel</td>
+  			<td align="center"><b/><i/>8719099323</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">399.59</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">410.57</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				410.29
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>48</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17233','Tawa Dam');" title="Click here to see History of Water Level for Tawa Dam">Tawa Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Narmadapuram</td>
+  			<td width="9%"><b/><i/>V. K. Jain</td>
+  			<td align="center"><b/><i/>9713063506</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">336.80</td>
+		  		
+		  		
+		  		
+  								
+ 		  	<td align="right">355.40</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				355.39
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>49</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17542','Thanwar Dam');" title="Click here to see History of Water Level for Thanwar Dam">Thanwar Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Mandla</td>
+  			<td width="9%"><b/><i/>Chandrashekhar</td>
+  			<td align="center"><b/><i/>9424340354</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">470.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">481.10</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>50</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17543','Tigra Dam');" title="Click here to see History of Water Level for Tigra Dam">Tigra Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Gwalior</td>
+  			<td width="9%"><b/><i/>Pankaj Sengar</td>
+  			<td align="center"><b/><i/>7509866417</td>
+		
+	  		 
+  						
+  						
+  										
+ 			
+		  		<td align="right">211.84</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">225.55</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>51</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('19621','Tillar');" title="Click here to see History of Water Level for Tillar">Tillar</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Shajapur</td>
+  			<td width="9%"><b/><i/>T.K.Parmaar</td>
+  			<td align="center"><b/><i/>9575205244</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">432.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">439.90</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>52</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('31955','Upper Kaketo Dam');" title="Click here to see History of Water Level for Upper Kaketo Dam">Upper Kaketo Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Sheopur</td>
+  			<td width="9%"><b/><i/>Agniwesh Singh</td>
+  			<td align="center"><b/><i/>9399865628</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">363.00</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">370.00</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				369.65
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				369.65
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  >
+		  		<td>53</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('20732','Urmil Dam');" title="Click here to see History of Water Level for Urmil Dam">Urmil Dam</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Chhatarpur</td>
+  			<td width="9%"><b/><i/>Ashish Malviya</td>
+  			<td align="center"><b/><i/>9893052965</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">228.29</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">237.43</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				231.90
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+		  	<tr  class="alternate-row" >
+		  		<td>54</td>
+		  		<td width="15%"><a href="javascript:viewRecordingHistory('17110','Wainganga &#40;Sanjay Sarovar&#41;');" title="Click here to see History of Water Level for Wainganga &#40;Sanjay Sarovar&#41;">Wainganga &#40;Sanjay Sarovar&#41;</td>
+		  		 
+		  		 	 
+		  		 
+		  		 
+  						
+		  				
+					
+					
+					
+  			<td width="7%"><b/><i/>Seoni</td>
+  			<td width="9%"><b/><i/>Sudesh Uikey</td>
+  			<td align="center"><b/><i/>8319445781</td>
+		
+	  		 
+  						
+  						
+  						
+  										
+ 			
+		  		<td align="right">506.27</td>
+		  		
+		  		
+		  		
+  						
+  								
+ 		  	<td align="right">519.38</td>
+		  		
+		  		
+		  		
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+
+ 					
+		  		<td align="right">
+		  				519.24
+		  		</td>
+		  		
+		  		<td align="right">
+		  				-
+		  		</td>
+		  		
+		  		<td  align="right">
+		  			     -
+		  		</td>
+		  		
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  		
+		  		
+		  				
+		  				
+		  				
+		  					<td  align="right">
+		  				-
+		  		</td>
+		  				
+		  				
+		  		<td  align="right">
+		  				-
+		  		</td>
+		  	</tr>
+  	
+  </table>
+ </div>
+ 
+ </div>
+ <input type="hidden" name="reservoirId" value =""/>
+ <input type="hidden" name="reservoirName" value =""/>
+ </form>
+ <script>
+ 	function viewRecordingHistory(reservoirId,reservoirName)
+ 	{
+ 		document.prevyrdata.reservoirId.value = reservoirId;
+ 		document.prevyrdata.reservoirName.value = reservoirName;
+ 		document.prevyrdata.action="/fcmreport/control/fgmRRD;jsessionid=103B0678E83A78C8BCA80A6340B4394F.jvm1";
+		document.prevyrdata.submit();	   
+ 		
+ 	}
+ </script>
+<!-- End Template component://fcmreport/webapp/fcmreport/fcmreport/RptReservoirReport.ftl -->
+<!-- End Section Widget  -->
+</div><!-- Begin Section Widget  -->
+<!-- Begin Template component://bluelight/includes/footer.ftl -->
+
+
+<div id="footer">
+
+</div>
+<!-- footer -->
+<div id="maincontainer"><div id="footernote">Powered by <a href="#" class="noicon"><font color="#ffffff"> © Water Resources Department (MP). All Rights Reserved. </font></a></div> </div>
+<!-- footer -->
+</body>
+</html>
+
+<!-- End Template component://bluelight/includes/footer.ftl -->
+<!-- End Section Widget  -->
+<!-- End Screen component://fcmreport/widget/CommonScreens.xml#GlobalDecoratorPublic -->
+<!-- End Screen component://fcmreport/widget/CommonScreens.xml#main-decorator -->
+<!-- End Screen component://fcmreport/widget/CommonScreens.xml#fcmreportCommonDecorator -->
+<!-- End Screen component://fcmreport/widget/fcmreportScreens.xml#reservoirWaterLevel -->
