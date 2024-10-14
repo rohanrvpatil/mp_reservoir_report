@@ -1,0 +1,24 @@
+name: maharashtra_reservoir_report
+
+on:
+  schedule:
+    - cron: "30 18 * * *"
+
+jobs:
+  download-pdf:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install requests
+
+    - name: Run pipeline script
+      run: python pipelines/maharashtra.py
